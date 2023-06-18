@@ -1,12 +1,80 @@
+<!-- 
+    최초 작성 : 2023년 6월 18일, 일요일
+    파일 명 : index.html
+    상세 설명
+    - 초기 페이지.
+    - 헤더, 푸터 영역은 고정, 메인 영역은 페이지에 따라서 변동.
+ -->
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E_CHRUCH - 예배예약 시스템</title>
+
+    <!-- ========================== CSS ========================== -->
+    <link rel="stylesheet" href="./css/common.css">
+
+    <!-- ========================== Google Fonts ========================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- ========================== FrontAwesome ========================== -->
+    <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
+
+    <!-- ========================== JAVASCRIPT ========================== -->
+    <script src="./js/common.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
     
+    <!-- ========================== HEADER ========================== -->
+    <nav class="navbar">
+        
+        <div class="navbar_logo">
+            <i class="fas fa-church"></i>
+            <a href="">E_CHURCH</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="">소개</a></li>
+            <li><a href="wr">예배예약</a></li>
+            <li><a href="notice">공지사항</a></li>
+            <li><a href="qna">Q&A</a></li>
+            <li><a href="creator">제작자</a></li>
+        </ul>
+
+        <ul class="navbar_icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+
+    </nav>
+
+    <!-- ========================== MAIN ========================== -->
+    <main id="content">
+
+        <script>
+            var id = "home";
+            $("#content").load("./"+id+".html");
+        </script>
+
+    </main>
+
+    <!-- ========================== FOOTERBAR ========================== -->
+    <footer class="footerbar">
+
+
+    </footer>
+
 </body>
 </html>
